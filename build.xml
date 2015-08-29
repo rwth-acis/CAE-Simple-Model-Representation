@@ -93,10 +93,10 @@
 	
   <!-- Generate Jars -->
   <target name="jar" depends="compile_main">
-      <jar jarfile="${export.jars}/cae-simple-model-representation-0.1.jar">
+      <jar jarfile="${export.jars}/cae-simple-model-representation-0.2.jar">
           <fileset dir="${tmp.classes}" includes="i5/cae/simpleModel/**" />
         <manifest>
-            <attribute name="Library-Version" value="0.1" />
+            <attribute name="Library-Version" value="0.2" />
             <attribute name="Library-SymbolicName" value="i5.cae.model.SimpleModel" />
         </manifest>
       </jar>
