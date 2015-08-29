@@ -25,14 +25,15 @@ public class SimpleModel implements Serializable {
   private ArrayList<SimpleEdge> edges;
   private ArrayList<SimpleEntityAttribute> attributes;
 
+
   /**
    * 
    * Creates a new model.
    * 
-   * @param name the name of this @link{SimpleModel}
-   * @param nodes an @link{ArrayList} of @link{SimpleNode}s
-   * @param edges an @link{ArrayList} of @link{SimpleEdge}s
-   * @param attributes an @link{ArrayList} of @link{SimpleEntityAttribute}s
+   * @param name the name of this {@link SimpleModel}
+   * @param nodes an {@link ArrayList} of {@link SimpleNode}s
+   * @param edges an {@link ArrayList} of {@link SimpleEdge}s
+   * @param attributes an {@link ArrayList} of {@link SimpleEntityAttribute}s
    * 
    */
   public SimpleModel(String name, ArrayList<SimpleNode> nodes, ArrayList<SimpleEdge> edges,
@@ -43,17 +44,21 @@ public class SimpleModel implements Serializable {
     this.attributes = attributes;
   }
 
+
   public String getName() {
     return name;
   }
+
 
   public ArrayList<SimpleNode> getNodes() {
     return nodes;
   }
 
+
   public ArrayList<SimpleEdge> getEdges() {
     return edges;
   }
+
 
   public ArrayList<SimpleEntityAttribute> getAttributes() {
     return attributes;

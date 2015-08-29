@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * 
- * Entity-Attribute Data-Class
+ * SimpleEntityAttribute Data-Class
  * 
  * Part of the CAE-Simple-Model-Representation.
  *
@@ -17,13 +17,14 @@ public class SimpleEntityAttribute implements Serializable {
   private String name;
   private String value;
 
+
   /**
    * 
-   * Creates a new @link{SimpleEntityAttribute}.
+   * Creates a new {@link SimpleEntityAttribute}.
    * 
-   * @param syncMetaId the SyncMeta id of this @link{SimpleEntityAttribute}
-   * @param name the name of this @link{SimpleEntityAttribute}
-   * @param value the value of this @link{SimpleEntityAttribute}
+   * @param syncMetaId the SyncMeta id of this {@link SimpleEntityAttribute}
+   * @param name the name of this {@link SimpleEntityAttribute}
+   * @param value the value of this {@link SimpleEntityAttribute}
    * 
    */
   public SimpleEntityAttribute(String syncMetaId, String name, String value) {
@@ -32,16 +33,20 @@ public class SimpleEntityAttribute implements Serializable {
     this.value = value;
   }
 
+
   public String getSyncMetaId() {
     return syncMetaId;
   }
+
 
   public String getName() {
     return name;
   }
 
+
   public String getValue() {
     return value;
   }
+
 
 }
