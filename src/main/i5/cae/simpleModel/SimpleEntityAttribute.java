@@ -28,7 +28,7 @@ public class SimpleEntityAttribute implements Serializable {
    * 
    */
   public SimpleEntityAttribute(String syncMetaId, String name, String value) {
-
+    this.syncMetaId = syncMetaId;
     this.name = name;
     this.value = value;
   }
